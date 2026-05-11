@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "svpbuild"
+version = "0.2.0"
+description = "A CLI tool to automatically compile Stardew Valley Content Patcher portrait mods without writing JSON."
+authors = [{ name = "koreanmelon" }]
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["typing-extensions>=4.0; python_version < '3.11'"]
+keywords = ["stardew-valley", "content-patcher", "modding", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Games/Entertainment",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/koreanmelon/svpbuild"
+Repository = "https://github.com/koreanmelon/svpbuild"
+Issues = "https://github.com/koreanmelon/svpbuild/issues"
+
+[project.scripts]
+svpbuild = "svpbuild.main:main"
+
+[dependency-groups]
+dev = ["pytest>=9.0.3", "ruff>=0.14"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/svpbuild"]
