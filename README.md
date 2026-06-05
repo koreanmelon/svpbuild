@@ -1,9 +1,9 @@
 # svpbuild
 
-[![CI](https://github.com/koreanmelon/svpbuild/actions/workflows/ci.yml/badge.svg)](https://github.com/koreanmelon/svpbuild/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/svpbuild.svg)](https://pypi.org/project/svpbuild/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/svpbuild.svg)](https://pypi.org/project/svpbuild/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![CI](https://github.com/koreanmelon/svpbuild/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/koreanmelon/svpbuild/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/svpbuild?label=PyPI)](https://pypi.org/project/svpbuild/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/svpbuild)](https://pypi.org/project/svpbuild/)
+[![License](https://img.shields.io/pypi/l/svpbuild)](LICENSE)
 
 Build Stardew Valley Content Patcher portrait packs without hand-writing `content.json`.
 
