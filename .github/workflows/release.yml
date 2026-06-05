@@ -130,6 +130,7 @@ jobs:
             if uvx \
               --index-url https://test.pypi.org/simple/ \
               --extra-index-url https://pypi.org/simple/ \
+              --index-strategy unsafe-best-match \
               --from svpbuild==${{ needs.prepare.outputs.release_version }} \
               svpbuild --help; then
               exit 0
